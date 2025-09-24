@@ -4,22 +4,23 @@ import Cookies from "js-cookie";
 
 const ProtectedRoute = ({ children }) => {
   const router = useRouter();
-  const [isClient, setIsClient] = useState(false);
-  const [authenticated, setAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(null); // null = loading
 
   useEffect(() => {
-    setIsClient(true);
-    const token = Cookies.get("token"); // or localStorage.getItem("token")
+    const token = Cookies.get("token"); // safe in browser
     if (!token) {
-      router.push("/login");
-      setAuthenticated(false);
+      router.replace("/login"); // redirect
+      setIsAuthenticated(false);
     } else {
-      setAuthenticated(true);
+      setIsAuthenticated(true);
     }
   }, [router]);
 
-  if (!isClient) return <p>Loading...</p>;
-  if (!authenticated) return <p>Redirecting to login...</p>;
+  if (isAuthenticated === null) {
+    return <p style={{ textAlign: "center", marginTop: 50 }}>Checking authentication...</p>;
+  }
+
+  if (!isAuthenticated) return null; // don't render children if not authenticated
 
   return <>{children}</>;
 };
