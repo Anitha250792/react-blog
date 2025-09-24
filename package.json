@@ -1,0 +1,23 @@
+{
+  "name": "blog-platform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.9.0",
+    "axios": "^1.6.0",
+    "js-cookie": "^3.0.5",
+    "next": "^15.5.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.36.0"
+  }
+}
