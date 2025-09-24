@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import Link from "next/link";
 
 export default function BlogList({ blogs }) {
@@ -17,7 +17,7 @@ export default function BlogList({ blogs }) {
     </div>
   );
 }
-=======
+
 import Link from "next/link";
 
 export default function BlogList({ blogs }) {
@@ -36,4 +36,4 @@ export default function BlogList({ blogs }) {
     </div>
   );
 }
->>>>>>> c856c14a9c831c04ecd30648c86fea9edd501598
+

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import Navbar from "../components/Navbar";
 import ProtectedRoute from "../components/ProtectedRoute";
 import BlogForm from "../components/BlogForm";
@@ -21,7 +21,7 @@ export default function Create() {
     </ProtectedRoute>
   );
 }
-=======
+
 import Navbar from "../components/Navbar";
 import ProtectedRoute from "../components/ProtectedRoute";
 import BlogForm from "../components/BlogForm";
@@ -44,4 +44,4 @@ export default function Create() {
     </ProtectedRoute>
   );
 }
->>>>>>> c856c14a9c831c04ecd30648c86fea9edd501598
+

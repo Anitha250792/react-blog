@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import { useState } from "react";
 
 export default function BlogForm({ onSubmit }) {
@@ -36,7 +36,7 @@ export default function BlogForm({ onSubmit }) {
     </form>
   );
 }
-=======
+
 import { useState } from "react";
 
 export default function BlogForm({ onSubmit }) {
@@ -74,4 +74,4 @@ export default function BlogForm({ onSubmit }) {
     </form>
   );
 }
->>>>>>> c856c14a9c831c04ecd30648c86fea9edd501598
+

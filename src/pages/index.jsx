@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import Navbar from "../components/Navbar";
 import ProtectedRoute from "../components/ProtectedRoute";
 import BlogList from "../components/BlogList";
@@ -19,7 +19,6 @@ export async function getServerSideProps() {
   const blogs = res.data.slice(0, 5);
   return { props: { blogs } };
 }
-=======
 import Navbar from "../components/Navbar";
 import ProtectedRoute from "../components/ProtectedRoute";
 import BlogList from "../components/BlogList";
@@ -40,4 +39,4 @@ export async function getServerSideProps() {
   const blogs = res.data.slice(0, 5);
   return { props: { blogs } };
 }
->>>>>>> c856c14a9c831c04ecd30648c86fea9edd501598
+

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import Link from "next/link";
 import Cookies from "js-cookie";
 import { useRouter } from "next/router";
@@ -21,7 +21,7 @@ export default function Navbar() {
     </nav>
   );
 }
-=======
+
 import Link from "next/link";
 import Cookies from "js-cookie";
 import { useRouter } from "next/router";
@@ -44,4 +44,4 @@ export default function Navbar() {
     </nav>
   );
 }
->>>>>>> c856c14a9c831c04ecd30648c86fea9edd501598
+
